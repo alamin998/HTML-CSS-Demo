@@ -1,0 +1,105 @@
+@font-face{
+  font-family: raleway;
+  src: url(../fonts/Raleway/Raleway-Light.ttf);
+}
+@font-face{
+  font-family: roboto;
+  src: url(../fonts/Roboto/Roboto-Medium.ttf);
+}
+body{
+  height: 100vh;
+  background-image: url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h3, p, .header{
+  margin: 0px;
+  padding: 0px;
+}
+.header h3{
+  font-size: 50px;
+  font-weight: 600;
+  font-family: raleway;
+  padding: 180px 0px 0px 220px;
+}
+p{
+  margin-left: 220px;
+  font-family: roboto;
+  font-size: 100px;
+}
+img{
+  float: right;
+  width: 600px;
+  margin-top: -320px;
+  margin-right: 100px;
+}
+.button{
+  font-family: raleway;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 10px;
+  border-radius: 8px;
+  width: 12%;
+  background-color: #00ACF1!important;
+  color: white!important;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  margin-left: 220px;
+  border: none;
+  cursor: pointer;
+}
+.footer p{
+  font-size: 30px;
+  margin-top: 140px;
+  font-weight: 100;
+  font-family: raleway;
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+h3.fade-in-up {
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+}
+p.fade-in-up {
+  animation-name: fadeInUp;
+  animation-fill-mode: backwards;
+  animation-delay: 1s;
+  animation-duration: 1s;
+}
+button.fade-in-up {
+  animation-name: fadeInUp;
+  animation-fill-mode: backwards;
+  animation-delay: 2s;
+  animation-duration: 1s;
+}
+img {
+  animation: fadeInRight 8s;
+}
+@keyframes fadeInRight {
+  0% {
+      opacity: 0;
+      transform: translateX(100px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+.text-scroll {
+  animation: scroll 20s linear infinite;
+  white-space: nowrap;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
